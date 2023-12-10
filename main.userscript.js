@@ -64,6 +64,10 @@
         waitForElement(document, "aside[aria-label='You may be missing out on ads revenue sharing!']", (element) => {
             element.parentElement?.remove();
         }, false);
+
+waitForElement(document, "aside[aria-label='Upgrade to Premium+']", (element) => {
+            element.parentElement?.remove();
+        }, false);
         
         waitForElement(document, "a[aria-label='Verified'][href='/i/verified-choose']", (element) => {
             element.remove();
